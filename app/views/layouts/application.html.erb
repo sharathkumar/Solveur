@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solveur</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body class="sidebar-mini fixed skin-red">
+		<div class="wrapper">
+			<%= render "layouts/navigation" %>
+			<%= render "layouts/left_sidebar" %>
+			<%= yield %>
+			<%= render "layouts/footer" %>
+		</div>
+	</body>
+</html>
